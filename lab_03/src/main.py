@@ -20,29 +20,29 @@ def linear_search_str(arr, target):
 
 def binary_search(arr, target):
     """Классический бинарный поиск в отсортированном массиве. Индекс или -1."""
-    low, high = 0, len(arr) - 1
-    while low <= high:
-        mid = (low + high) // 2
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
         if arr[mid] == target:
             return mid
         elif arr[mid] < target:
-            low = mid + 1
+            left = mid + 1
         else:
-            high = mid - 1
+            right = mid - 1
     return -1
 
 
 def search_transaction(ids, target_id):
     """Бизнес: поиск ID транзакции бинарным поиском за O(log n)."""
-    low, high = 0, len(ids) - 1
-    while low <= high:
-        mid = (low + high) // 2
+    left, right = 0, len(ids) - 1
+    while left <= right:
+        mid = (left + right) // 2
         if ids[mid] == target_id:
             return mid
         elif ids[mid] < target_id:
-            low = mid + 1
+            left = mid + 1
         else:
-            high = mid - 1
+            right = mid - 1
     return -1
 
 
