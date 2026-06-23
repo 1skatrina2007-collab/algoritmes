@@ -93,6 +93,4 @@ True
 
 ## Ссылка на репозиторий
 
-https://github.com/1skatrina2007-collab/algoritmes/blob/main/lab_03/src/main.py
-
-_________________________
+_https://github.com/1skatrina2007-collab/algoritmes/blob/main/lab_03/src/main.py_
