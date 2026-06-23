@@ -93,4 +93,4 @@ True
 
 ## Ссылка на репозиторий
 
-![main.py](src/main.py)
+[main.py](src/main.py)
