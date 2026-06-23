@@ -93,4 +93,4 @@ True
 
 ## Ссылка на репозиторий
 
-_https://github.com/1skatrina2007-collab/algoritmes/blob/main/lab_03/src/main.py_
+![main.py](src/main.py)
