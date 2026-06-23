@@ -41,15 +41,11 @@
 
 ### Алгоритм поиска — бинарный поиск
 
-![Блок-схема бинарного поиска](flowchart_binary_search.png)
-
-Исходник: `flowchart_binary_search.drawio`
+![Блок-схема бинарного поиска](diagrams/flowchart_binary_search.png)
 
 ### Алгоритм сортировки — пузырьковая сортировка
 
-![Блок-схема пузырьковой сортировки](flowchart_bubble_sort.png)
-
-Исходник: `flowchart_bubble_sort.drawio`
+![Блок-схема пузырьковой сортировки](diagrams/flowchart_bubble_sort.png)
 
 ---
 
@@ -63,7 +59,7 @@ python3 main.py
 
 **Скриншот консоли:**
 
-![Результат работы в консоли](console_output.png)
+![Результат работы в консоли](diagrams/console_output.png)
 
 **Текстовый вывод:**
 
