@@ -28,18 +28,21 @@ def window_hash(s: str, m: int) -> int:
         h += ord(s[i]) * (p ** (m - 1 - i))
     return h
 
+def main():
+    s = input("Введите строку: ")
+    try:
+        m = int(input("Введите m: "))
+    except ValueError:
+        print("Ошибка: m должно быть целым числом")
+        return
+    expected = input("Введите ожидаемый хэш (или оставьте пустым для пропуска): ")
+    result = window_hash(s, m)
+    print(f"Исходная строка: {s}")
+    print(f"m = {m}")
+    print(f"Полученный хэш: {result}")
+    if expected:
+        print(f"Ожидаемый хэш: {expected}")
+        print("Результат:", "верно" if str(result) == expected else "неверно")
 
-# ===== Блок для тестирования (можно удалить при сдаче) =====
 if __name__ == "__main__":
-    # Корректные вызовы
-    print("window_hash('ABC', 3) =", window_hash("ABC", 3))   # 65*31^2 + 66*31 + 67 = 64578
-    print("window_hash('ABC', 2) =", window_hash("ABC", 2))   # 65*31 + 66 = 2081
-    print("window_hash('Hello', 10) =", window_hash("Hello", 10))  # m > len -> хэш всей строки
-    
-    # Неправильные, но обрабатываемые значения
-    print("window_hash('test', 0) =", window_hash("test", 0))     # 0
-    print("window_hash('test', -3) =", window_hash("test", -3))   # 0
-    print("window_hash('', 5) =", window_hash("", 5))             # 0, т.к. len=0, m усекается до 0
-    
-    # Попытка передать нестроку вызовет исключение (раскомментируйте для проверки)
-    # print(window_hash(123, 2))   # TypeError
+    main()
